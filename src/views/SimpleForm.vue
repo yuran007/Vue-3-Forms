@@ -53,21 +53,17 @@
 
       <h3>Extras</h3>
       <div>
-        <input
-          type="checkbox"
-          v-model="event.extras.catering"
-          class="field"
+        <BaseCheckbox
+        v-model="event.extras.catering"
+        label="Catering"
         />
-        <label>Catering</label>
       </div>
 
       <div>
-        <input
-          type="checkbox"
-          v-model="event.extras.music"
-          class="field"
+        <BaseCheckbox
+        v-model="event.extras.music"
+        label="Live music"
         />
-        <label>Live music</label>
       </div>
 
       <button type="submit">Submit</button>
